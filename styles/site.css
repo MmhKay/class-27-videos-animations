@@ -1,0 +1,319 @@
+/* Note: No credit is provided for submitting design and/or code that is taken */
+/*       from course-provided examples. This includes the Ithaca Zoo example.  */
+html {
+  background-color: #cfcbbf;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+  font-family: 'Lucida Grande', 'Calibri', 'Cantarell', sans-serif;
+
+  background-color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+
+  padding-left: 24px;
+
+  background-color: #efece5;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22pt;
+}
+
+header h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: flex;
+  align-items: stretch;
+
+  list-style: none;
+}
+
+nav ul li a {
+  padding: 20px 24px;
+
+  color: black;
+
+  font-size: 18pt;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  padding-bottom: 8px;
+
+  background-color: #d0e3d9;
+  border-bottom: 8px solid #55bea9;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 24pt;
+}
+
+.rounded-corners {
+  border-radius: 8px;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: black;
+  background-color: #efece5;
+}
+
+.highlight-fun {
+  color: white;
+  background-color: #f3633e;
+}
+
+.highlight-dark {
+  color: white;
+  background-color: #3e587e;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.readable {
+  padding: 24px;
+  background-color: white;
+  color: #2f466c;
+}
+
+.readable>p {
+  margin-top: 0;
+}
+
+.logo img {
+  display: block;
+}
+
+.theme-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 400px;
+  max-width: 800px;
+}
+
+.picture-citation {
+  display: block;
+  font-size: 11pt;
+  text-align: right;
+  margin-top: 2px;
+  margin-bottom: 12px;
+}
+
+.picture-citation a {
+  color: #2f466c;
+}
+
+.picture-citation {
+  margin-bottom: 0;
+}
+
+blockquote {
+  border-left: 2px solid #50525c;
+  padding: 0 10px;
+  margin-left: 0;
+}
+
+/* Note: No credit is provided for submitting design and/or code that is taken */
+/*       from course-provided examples. This includes the Ithaca Zoo example.  */
+@media (max-width: 700px) {
+  header {
+    padding: 0;
+
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  header h1 {
+    background-color: #cfcbbf;
+    padding: 18px;
+    font-size: 28pt;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 16px 8px 16px 12px;
+    border-left: 8px solid #efece5;
+  }
+
+  nav ul li a:hover {
+    background-color: #d0e3d9;
+    border-left: 8px solid #55bea9;
+    border-bottom: none;
+    padding-bottom: 16px;
+  }
+
+  .content-container {
+    flex-direction: column;
+    gap: 0;
+    padding-bottom: 8px;
+  }
+
+  /* text for events */
+  .events-text {
+    order: 2;
+  }
+}
+
+/* Interactivity */
+
+.hidden {
+  display: none !important;
+}
+
+/* Cookie Banner */
+
+.banner {
+  display: flex;
+  align-items: center;
+
+  background: #fdd25c;
+  box-shadow: 0 0 5px 1px #0000004d;
+
+  padding: 20px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#cookie-banner .button {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#cookie-banner p {
+  flex-grow: 1;
+}
+
+.button {
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+  font-size: 12pt;
+  letter-spacing: 2px;
+  padding: 5px 20px;
+  border-radius: 4px;
+  border: 2px solid black;
+}
+
+.button:hover {
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+}
+
+/* Thumbnail Gallery */
+
+.thumbnail-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.thumbnail-gallery figure {
+  margin: 0;
+}
+
+.thumbnail-gallery figure>img {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+#gallery-thumbnails {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex-grow: 1;
+  min-width: 140px;
+}
+
+#gallery-thumbnails .button {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 2px solid black;
+  background-color: black;
+  outline: none;
+}
+
+#gallery-thumbnails img {
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#gallery-figures figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 620px) {
+  .thumbnail-gallery {
+    flex-direction: row;
+  }
+
+  #gallery-thumbnails {
+    flex-direction: column;
+    flex-grow: 0;
+    width: 170px;
+    min-width: 140px;
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Home - The Ithaca Zoo</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
+
+  <!-- Source: https://openclipart.org/detail/274587/zebra-head -->
+  <link rel="icon" href="images/favicon.svg">
+</head>
+
+<body>
+  <!-- Accessibility: Cookie banner should be the first thing that loads. -->
+  <div id="cookie-banner" class="banner">
+    <p>This website uses cookies to ensure you get the best experience on our website.</p>
+    <button id="cookie-accept-button" class="button" aria-label="accept cookies">Accept</button>
+  </div>
+
+  <header>
+    <h1><a href="index.html">🦓 Ithaca Zoo</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="popular.html">Popular Animals</a></li>
+        <li><a href="rules.html">Safety</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="welcome highlight-fun">
+      <h2>Welcome!</h2>
+
+      <div class="content-container readable">
+        <picture class="logo">
+          <!-- Source: original work (Student's Name) -->
+          <img alt="" src="images/zoo-logo.png" width="200" height="214">
+        </picture>
+
+        <div>
+          <p>
+            We're so excited to share our love of animals with our neighbors, and we hope you come visit soon. Whether
+            you stop by once while you're passing through town or come multiple times a week, you'll find the Ithaca Zoo
+            is ready to welcome you with open arms.
+          </p>
+
+          <p>
+            <strong>Advisory: due to upcoming hot weather, we advise all guests to make sure they bring sunscreen for
+              protection from ultraviolet rays and a water bottle to help stay hydrated.</strong> We have water
+            fountains all over the zoo where you can fill up. Just look for the signs that say "Watering Hole."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="events highlight-dark">
+      <h2>Events</h2>
+
+      <div class="content-container readable">
+        <div class="events-text">
+          <p>
+            Our next event is the Red Panda Meet and Greet, where you have a chance to meet our favorite little bundles
+            of joy,
+            <em>Red</em> and <em>Fluffy</em>. This will take place next Friday from 12:00-3:30 PM. <strong>There will be
+              a line</strong>, so come early.
+          </p>
+
+          <blockquote>
+            <p>
+              The Red Panda Meet and Greet was the most fun my kids had all summer! - John Smith Sr.
+            </p>
+          </blockquote>
+
+          <blockquote>
+            <p>
+              Meeting Apple and Fluffy was cool. - John Smith Jr.
+            </p>
+          </blockquote>
+        </div>
+
+        <div class="events-picture">
+          <picture class="theme-image">
+            <img src="images/red-panda.jpg" alt="" width="800" height="648">
+          </picture>
+          <cite class="picture-citation">
+            Source: <a href="https://www.flickr.com/photos/138191974@N03/23714231979">Biology Club</a>
+          </cite>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight">
+      <h2>Sections of the Zoo</h2>
+
+      <ul>
+        <li>Indoor Ocean</li>
+        <li>Tangled Swamp</li>
+        <li>Hidden Jungle</li>
+        <li>Alpine Mountains</li>
+        <li>Central Savanna</li>
+        <li>Arid Desert</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Featured Animals</h2>
+
+      <dl>
+        <dt>Cryptopsaras Couesii</dt>
+        <dd>Commonly called the Triplewart Seadevil, this angler fish that uses a glowing lure on its head to attract
+          prey.
+        </dd>
+        <dt>Ailurus Fulgens</dt>
+        <dd>Commonly called the Red Panda, this fluffy creature is actually more closely related to raccoons than giant
+          pandas.</dd>
+        <dt>Giraffa Camelopardalis Reticulata</dt>
+        <dd>Although there are many kinds of giraffes in the wild, this is the kind most commonly found in zoos around
+          the
+          world.</dd>
+        <dt>Panthera uncia</dt>
+        <dd>Commonly known as the snow leopard, this animal has been categorized as a vulnerable
+          species since 1985.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/cookie-banner.js"></script>
+
+</body>
+
+</html>

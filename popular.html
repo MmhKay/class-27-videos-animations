@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <title>Popular Animals - The Ithaca Zoo</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/site.css">
+
+  <!-- Source: https://openclipart.org/detail/274587/zebra-head -->
+  <link rel="icon" href="images/favicon.svg">
+</head>
+
+<body>
+  <!-- Accessibility: Cookie banner should be the first thing that loads. -->
+  <div id="cookie-banner" class="banner">
+    <p>This website uses cookies to ensure you get the best experience on our website.</p>
+    <button id="cookie-accept-button" class="button" aria-label="accept cookies">Accept</button>
+  </div>
+
+  <header>
+    <h1><a href="index.html">🦓 Ithaca Zoo</a></h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="popular.html">Popular Animals</a></li>
+        <li><a href="rules.html">Safety</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="highlight-fun">
+      <h2>Popular Animal: Jeff the Giraffe</h2>
+
+      <div class="readable">
+        <p>
+          Our most popular animal is our friendly pal Jeff the Giraffe! Jeff uses his long neck to chomp down on leaves from tall trees or snacks from zookeepers all the way up on the observation platform. Don't be scared of Jeff's long tongue; if he licks you, that means he likes you!
+        </p>
+
+        <div class="thumbnail-gallery">
+          <div id="gallery-thumbnails">
+            <!-- Image Source: https://pixabay.com/en/giraffe-zoo-mammal-animal-head-2481840/ -->
+            <!-- Image License: CC0 Creative Commons -->
+            <img id="gallery-thumb1" class="button" src="images/jeff-giraffe.jpg" alt="">
+
+            <!-- Image Source: https://pixabay.com/photos/giraffe-laying-down-nature-uganda-4499694/ -->
+            <!-- Image License: Simplified Pixabay License -->
+            <img id="gallery-thumb2" class="button" src="images/jeff-sitting.jpg" alt="">
+
+            <!-- Image Source: https://pixabay.com/photos/giraffe-nature-safari-africa-1029795/ -->
+            <!-- Image License: Simplified Pixabay License -->
+            <img id="gallery-thumb3" class="button" src="images/jeff-standing.jpg" alt="">
+          </div>
+
+          <div id="gallery-figures">
+            <figure id="gallery-figure1">
+              <!-- Image Source: https://pixabay.com/en/giraffe-zoo-mammal-animal-head-2481840/ -->
+              <!-- Image License: CC0 Creative Commons -->
+              <img class="rounded-corners" src="images/jeff-giraffe.jpg" alt="Jeff the Giraffe" width="640" height="426">
+
+              <figcaption>
+                Our friend, Jeff.
+                <cite><a href="https://pixabay.com/en/giraffe-zoo-mammal-animal-head-2481840/">Source</a>
+                </cite>
+              </figcaption>
+            </figure>
+
+            <figure id="gallery-figure2" class="hidden">
+              <!-- Image Source: https://pixabay.com/photos/giraffe-laying-down-nature-uganda-4499694/ -->
+              <!-- Image License: Simplified Pixabay License -->
+              <img class="rounded-corners" src="images/jeff-sitting.jpg" alt="Jeff the Giraffe" width="640" height="426">
+
+              <figcaption>
+                Jeff sitting.
+                <cite><a href="https://pixabay.com/photos/giraffe-laying-down-nature-uganda-4499694/">Source</a>
+                </cite>
+              </figcaption>
+            </figure>
+
+            <figure id="gallery-figure3" class="hidden">
+              <!-- Image Source: https://pixabay.com/photos/giraffe-nature-safari-africa-1029795/ -->
+              <!-- Image License: Simplified Pixabay License -->
+              <img class="rounded-corners" src="images/jeff-standing.jpg" alt="Jeff the Giraffe" width="640" height="426">
+
+              <figcaption>
+                Jeff standing at 5.5 meters high!
+                <cite><a href="https://pixabay.com/photos/giraffe-nature-safari-africa-1029795/">Source</a>
+                </cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <p>
+          Jeff, like all giraffes, sleeps very little (&lt; 30 minutes a night) in make sure he is alert &amp; ready to avoid predators. No wonder he eats so much every day (&gt; 50 pounds [or 23 kilograms] of leaves)!
+        </p>
+      </div>
+    </section>
+
+    <section class="highlight-dark">
+      <h2>Popular Animal: Sam the Snow Leopard</h2>
+
+      <div class="readable">
+        <p>
+          Sam is a recent addition to the Ithaca Zoo and we are thrilled to have her! She prefers her privacy and is most active in the mornings. She likes to eat sheep and goats, so be sure to leave your livestock at home. Sam is looking forward to winter in the Finger Lakes and hopes to see lots of snow.
+        </p>
+
+        <figure>
+          <!-- Image Source: https://pixabay.com/photos/snow-leopard-leopard-panthera-uncia-725384/ -->
+          <!-- Image License: Simplified Pixabay License -->
+          <img src="images/sam-snow-leopard.jpg" alt="Sam the Snow Leopard" width="640" height="427">
+          <figcaption>
+            Our Newest Friend Sam.
+            <cite>Source: <a href="https://pixabay.com/photos/snow-leopard-leopard-panthera-uncia-725384/">https://pixabay.com/photos/snow-leopard-leopard-panthera-uncia-725384/</a></cite>
+          </figcaption>
+        </figure>
+
+        <p>
+          Like many other big cats, Sam is an excellent acrobat. She can leap up to 30 feet (9 meters) in a single bound, so be sure to stay behind the protective glass lest you end up her lunch!
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/jquery-3.7.1.js"></script>
+  <script src="scripts/cookie-banner.js"></script>
+  <script src="scripts/gallery.js"></script>
+
+</body>
+
+</html>
