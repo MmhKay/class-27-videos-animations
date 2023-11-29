@@ -157,6 +157,11 @@ blockquote {
   margin-left: 0;
 }
 
+video {
+  width:100%;
+  height:auto;
+}
+
 /* Note: No credit is provided for submitting design and/or code that is taken */
 /*       from course-provided examples. This includes the Ithaca Zoo example.  */
 @media (max-width: 700px) {
